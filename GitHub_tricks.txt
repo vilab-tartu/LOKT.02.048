@@ -29,3 +29,6 @@ $ git push origin [name_of_your_new_branch]
 
 Merge:
 $git merge
+
+In case there are errors, check status for guidelines:
+$git status
