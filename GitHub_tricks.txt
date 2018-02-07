@@ -24,3 +24,6 @@ $git branch Name
 
 Merge:
 $git merge
+
+In case there are errors, check status for guidelines:
+$git status
