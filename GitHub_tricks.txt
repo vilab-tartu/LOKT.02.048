@@ -3,7 +3,7 @@ $git clone https://github.com/vilab-tartu/LOKT.02.048.git
 
 To avoid reentering the credentials on each push:
 $ git config credential.helper store
-$ git push http://example.com/repo.git
+$ git push https://github.com/vilab-tartu/LOKT.02.048.git
 Username: <type your username>
 Password: <type your password>
 
