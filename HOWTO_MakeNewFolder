@@ -1,0 +1,7 @@
+Click "Create new file"
+Write the directory with a filename like "home/new_dir/new_dir2/.../filename"
+The new folders are made as written, so new_dir is in home directory etc.
+Empty folders can't be made, only making through "Create new file"
+
+Also written in:
+https://stackoverflow.com/questions/18773598/creating-folders-inside-github-com-repo-without-using-git
