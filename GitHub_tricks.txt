@@ -1,5 +1,11 @@
-Clone the repositroy to your computer
+Clone the repositroy to your computer:
 $git clone https://github.com/vilab-tartu/LOKT.02.048.git
+
+To avoid reentering the credentials on each push:
+$ git config credential.helper store
+$ git push https://github.com/vilab-tartu/LOKT.02.048.git
+Username: <type your username>
+Password: <type your password>
 
 If repository is cloned before and you start chaning something, pull latest version:
 $git pull
