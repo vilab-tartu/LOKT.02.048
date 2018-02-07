@@ -5,16 +5,21 @@ If repository is cloned before and you start chaning something, pull latest vers
 $git pull
 
 Confiugre your user in your computer:
-$git config --global user.name "Your Name Here"
-$git config --global user.email "your_email@youremail.com"
+$git config --global user.name ["Your Name Here"]
+$git config --global user.email ["your_email@youremail.com"]
 
 When adding files or direcotries to the repository:
-$git add Filename
-$git commit -m "message for this commit"
+$git add [Filename]
+$git commit -m ["message for this commit"]
 $git push
 
-If you want to add your personal branch:
-$git branch Name
+Create the branch on your local machine and switch in this branch :
+$ git checkout -b [name_of_your_new_branch]
+Change working branch :
+$ git checkout [name_of_your_new_branch]
+Push the branch on github :
+$ git push origin [name_of_your_new_branch]
+
 
 Merge:
 $git merge
