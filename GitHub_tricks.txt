@@ -1,0 +1,17 @@
+Clone the repositroy to your computer
+$git clone https://github.com/vilab-tartu/LOKT.02.048.git
+
+Confiugre your user in your computer:
+$git config --global user.name "Your Name Here"
+$git config --global user.email "your_email@youremail.com"
+
+When adding files or direcotries to the repository:
+$git add Filename
+$git commit -m "message for this commit"
+$git push
+
+If you want to add your personal branch:
+$git branch Name
+
+Merge:
+$git merge
