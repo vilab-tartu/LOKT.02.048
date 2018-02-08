@@ -26,9 +26,14 @@ $ git checkout [name_of_your_new_branch]
 Push the branch on github :
 $ git push origin [name_of_your_new_branch]
 
+To resolve conflict use eg meld.
 
 Merge:
 $git merge
 
 In case there are errors, check status for guidelines:
 $git status
+
+Ignoring files is achieved by adding exceptions in .gitignore file.
+Each exception pattern is stored on a new line and pound signs are reserved for comments as usual.
+.gitignore needs to be added, committed and pushed just as regular files.
