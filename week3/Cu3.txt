@@ -1,0 +1,247 @@
+
+  ___ ___ ___ _ _ _  
+ |   |   |_  | | | | 
+ | | | | | . | | | | 
+ |__ |  _|___|_____|  1.2.0
+ |___|_|             
+
+User:   user@ubuntu
+Date:   Mon Mar  5 06:50:44 2018
+Arch:   x86_64
+Pid:    11486
+Python: 3.6.3
+gpaw:   /usr/lib/python3/dist-packages/gpaw
+_gpaw:  /usr/lib/python3/dist-packages/_gpaw.cpython-36m-x86_64-linux-gnu.so
+ase:    /home/user/.local/lib/python3.6/site-packages/ase (version 3.15.0)
+numpy:  /home/user/.local/lib/python3.6/site-packages/numpy (version 1.14.0)
+scipy:  /home/user/.local/lib/python3.6/site-packages/scipy (version 1.0.0)
+units:  Angstrom and eV
+cores:  1
+
+Input parameters:
+  basis: dzp
+  kpts: [8 8 8]
+  mode: lcao
+
+System changes: positions, numbers, cell, pbc, initial_charges, initial_magmoms 
+
+Initialize ...
+
+Cu-setup:
+  name: Copper
+  id: 0f0e166f2a1531348bd10bcfa07bef11
+  Z: 29
+  valence: 11
+  core: 18
+  charge: 0.0
+  file: /usr/share/gpaw-setups/Cu.LDA.gz
+  cutoffs: 1.06(comp), 2.06(filt), 2.43(core), lmax=2
+  valence states:
+                energy  radius
+    4s(1.00)    -4.857   1.164
+    4p(0.00)    -0.783   1.164
+    3d(10.00)    -5.324   1.058
+    *s          22.354   1.164
+    *p          26.429   1.164
+    *d          21.887   1.058
+
+  LCAO basis set for Cu:
+    Name: dzp
+    File: /usr/share/gpaw-setups/Cu.dzp.basis.gz
+    Number of radial functions: 5
+    Number of spherical harmonics: 15
+      l=0, rc=8.9688 Bohr: 4s-sz confined orbital
+      l=2, rc=5.1719 Bohr: 3d-sz confined orbital
+      l=0, rc=5.3281 Bohr: 4s-dz split-valence wave
+      l=2, rc=3.1406 Bohr: 3d-dz split-valence wave
+      l=1, rc=8.9688 Bohr: p-type Gaussian polarization
+
+Reference energy: -179804.388190
+
+Spin-paired calculation
+
+Occupation numbers:
+  Fermi-Dirac: width=0.1000 eV
+
+Convergence criteria:
+  Maximum total energy change: 0.0005 eV / electron
+  Maximum integral of absolute density change: 0.0001 electrons
+  Maximum integral of absolute eigenstate change: 4e-08 eV^2
+  Maximum number of iterations: 333
+
+Symmetries present (total): 48
+
+  ( 1  0  0)  ( 1  0  0)  ( 1  0  0)  ( 1  0  0)  ( 1  0  0)  ( 1  0  0)
+  ( 0  1  0)  ( 0  1  0)  ( 0  0  1)  ( 0  0  1)  ( 0  0 -1)  ( 0  0 -1)
+  ( 0  0  1)  ( 0  0 -1)  ( 0  1  0)  ( 0 -1  0)  ( 0  1  0)  ( 0 -1  0)
+
+  ( 1  0  0)  ( 1  0  0)  ( 0  1  0)  ( 0  1  0)  ( 0  1  0)  ( 0  1  0)
+  ( 0 -1  0)  ( 0 -1  0)  ( 1  0  0)  ( 1  0  0)  ( 0  0  1)  ( 0  0  1)
+  ( 0  0  1)  ( 0  0 -1)  ( 0  0  1)  ( 0  0 -1)  ( 1  0  0)  (-1  0  0)
+
+  ( 0  1  0)  ( 0  1  0)  ( 0  1  0)  ( 0  1  0)  ( 0  0  1)  ( 0  0  1)
+  ( 0  0 -1)  ( 0  0 -1)  (-1  0  0)  (-1  0  0)  ( 1  0  0)  ( 1  0  0)
+  ( 1  0  0)  (-1  0  0)  ( 0  0  1)  ( 0  0 -1)  ( 0  1  0)  ( 0 -1  0)
+
+  ( 0  0  1)  ( 0  0  1)  ( 0  0  1)  ( 0  0  1)  ( 0  0  1)  ( 0  0  1)
+  ( 0  1  0)  ( 0  1  0)  ( 0 -1  0)  ( 0 -1  0)  (-1  0  0)  (-1  0  0)
+  ( 1  0  0)  (-1  0  0)  ( 1  0  0)  (-1  0  0)  ( 0  1  0)  ( 0 -1  0)
+
+  ( 0  0 -1)  ( 0  0 -1)  ( 0  0 -1)  ( 0  0 -1)  ( 0  0 -1)  ( 0  0 -1)
+  ( 1  0  0)  ( 1  0  0)  ( 0  1  0)  ( 0  1  0)  ( 0 -1  0)  ( 0 -1  0)
+  ( 0  1  0)  ( 0 -1  0)  ( 1  0  0)  (-1  0  0)  ( 1  0  0)  (-1  0  0)
+
+  ( 0  0 -1)  ( 0  0 -1)  ( 0 -1  0)  ( 0 -1  0)  ( 0 -1  0)  ( 0 -1  0)
+  (-1  0  0)  (-1  0  0)  ( 1  0  0)  ( 1  0  0)  ( 0  0  1)  ( 0  0  1)
+  ( 0  1  0)  ( 0 -1  0)  ( 0  0  1)  ( 0  0 -1)  ( 1  0  0)  (-1  0  0)
+
+  ( 0 -1  0)  ( 0 -1  0)  ( 0 -1  0)  ( 0 -1  0)  (-1  0  0)  (-1  0  0)
+  ( 0  0 -1)  ( 0  0 -1)  (-1  0  0)  (-1  0  0)  ( 0  1  0)  ( 0  1  0)
+  ( 1  0  0)  (-1  0  0)  ( 0  0  1)  ( 0  0 -1)  ( 0  0  1)  ( 0  0 -1)
+
+  (-1  0  0)  (-1  0  0)  (-1  0  0)  (-1  0  0)  (-1  0  0)  (-1  0  0)
+  ( 0  0  1)  ( 0  0  1)  ( 0  0 -1)  ( 0  0 -1)  ( 0 -1  0)  ( 0 -1  0)
+  ( 0  1  0)  ( 0 -1  0)  ( 0  1  0)  ( 0 -1  0)  ( 0  0  1)  ( 0  0 -1)
+
+512 k-points: 8 x 8 x 8 Monkhorst-Pack grid
+20 k-points in the irreducible part of the Brillouin zone
+       k-points in crystal coordinates                weights
+   0:     0.06250000    0.06250000    0.06250000          8/512
+   1:     0.18750000    0.06250000    0.06250000         24/512
+   2:     0.18750000    0.18750000    0.06250000         24/512
+   3:     0.18750000    0.18750000    0.18750000          8/512
+   4:     0.31250000    0.06250000    0.06250000         24/512
+   5:     0.31250000    0.18750000    0.06250000         48/512
+   6:     0.31250000    0.18750000    0.18750000         24/512
+   7:     0.31250000    0.31250000    0.06250000         24/512
+   8:     0.31250000    0.31250000    0.18750000         24/512
+   9:     0.31250000    0.31250000    0.31250000          8/512
+          ...
+  19:     0.43750000    0.43750000    0.43750000          8/512
+
+Wave functions: LCAO
+  Diagonalizer: Serial LAPACK
+  Atomic Correction: dense with blas
+  Datatype: complex
+  Eigensolver: None 
+
+LCAO using direct dense diagonalizer 
+
+Densities:
+  Coarse grid: 20*20*20 grid
+  Fine grid: 40*40*40 grid
+  Total Charge: 0.000000 
+
+Density mixing:
+  Method: separate
+  Backend: pulay
+  Linear mixing parameter: 0.05
+  Mixing with 5 old densities
+  Damping of long wave oscillations: 50 
+
+Hamiltonian:
+  XC and Coulomb potentials evaluated on a 40*40*40 grid
+  Using the LDA Exchange-Correlation functional
+  Interpolation: tri-quintic (5. degree polynomial)
+  Poisson solver: Jacobi solver with 4 multi-grid levels
+    Coarsest grid: 5 x 5 x 5 points
+    Stencil: 6*3+1=19 point O(h^6) finite-difference Laplacian
+    Tolerance: 2.000000e-10
+    Max iterations: 1000 
+
+Memory estimate:
+  Process memory now: 266.99 MiB
+  Calculator: 41.31 MiB
+    Density: 22.18 MiB
+      Arrays: 1.59 MiB
+      Localized functions: 19.99 MiB
+      Mixer: 0.61 MiB
+    Hamiltonian: 3.73 MiB
+      Arrays: 1.04 MiB
+      XC: 0.00 MiB
+      Poisson: 1.18 MiB
+      vbar: 1.51 MiB
+    Wavefunctions: 15.40 MiB
+      C [qnM]: 0.66 MiB
+      S, T [2 x qmm]: 2.20 MiB
+      P [aqMi]: 0.08 MiB
+      TCI: 0.00 MiB
+      BasisFunctions: 12.46 MiB
+      Eigensolver: 0.00 MiB
+
+Total number of cores used: 1
+
+Number of atoms: 4
+Number of atomic orbitals: 60
+Number of bands in calculation: 36
+Bands to converge: occupied states only
+Number of valence electrons: 44
+
+... initialized
+
+Initializing position-dependent things.
+
+Density initialized from atomic densities
+   .--------.  
+  /|        |  
+ * |        |  
+ |Cu        |  
+ | .-Cu-----.  
+ |/   Cu   /   
+ Cu-------*    
+
+Positions:
+   0 Cu     0.000000    0.000000    0.000000
+   1 Cu     0.000000    1.807500    1.807500
+   2 Cu     1.807500    0.000000    1.807500
+   3 Cu     1.807500    1.807500    0.000000
+
+Unit cell:
+           periodic     x           y           z      points  spacing
+  1. axis:    yes    3.615000    0.000000    0.000000    20     0.1808
+  2. axis:    yes    0.000000    3.615000    0.000000    20     0.1808
+  3. axis:    yes    0.000000    0.000000    3.615000    20     0.1808
+
+                     log10-error:    total        iterations:
+           time      wfs    density  energy       fermi  poisson
+iter:   1  06:50:50          +inf   -23.376942    3      11     
+iter:   2  06:51:08         -1.11   -21.462044    30     7      
+iter:   3  06:51:27         -1.20   -17.977531    30     8      
+iter:   4  06:51:45         -1.91   -18.471143    29     7      
+iter:   5  06:52:03         -1.66   -17.875934    31     7      
+iter:   6  06:52:22         -2.55   -17.875960    1      1      
+iter:   7  06:52:40         -2.55   -17.890788    3      5      
+iter:   8  06:52:59         -2.35   -17.867358    3      6      
+iter:   9  06:53:17         -3.42   -17.867222    3      4      
+iter:  10  06:53:35         -3.72   -17.867167    3      4      
+iter:  11  06:53:53         -4.93   -17.867294    2      2      
+
+Converged after 11 iterations.
+
+Energy contributions relative to reference atoms: (reference = -179804.388190)
+
+Kinetic:        -85.684373
+Potential:      +73.539344
+External:        +0.000000
+XC:              -5.826038
+Entropy (-ST):   -0.041965
+Local:           +0.124756
+--------------------------
+Free energy:    -17.888276
+Extrapolated:   -17.867294
+
+Fermi level: 7.58433
+
+Warning: Showing only first 2 kpts
+ Kpt  Band  Eigenvalues  Occupancy
+  0    20      5.98839    0.03125
+  0    21      9.44297    0.00000
+  0    22      9.44297    0.00000
+  0    23      9.44297    0.00000
+
+  1    20      5.97937    0.09375
+  1    21      7.50516    0.06452
+  1    22     10.16349    0.00000
+  1    23     10.16349    0.00000
+
+

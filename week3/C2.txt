@@ -1,0 +1,183 @@
+
+  ___ ___ ___ _ _ _  
+ |   |   |_  | | | | 
+ | | | | | . | | | | 
+ |__ |  _|___|_____|  1.2.0
+ |___|_|             
+
+User:   user@ubuntu
+Date:   Mon Mar  5 08:14:16 2018
+Arch:   x86_64
+Pid:    11520
+Python: 3.6.3
+gpaw:   /usr/lib/python3/dist-packages/gpaw
+_gpaw:  /usr/lib/python3/dist-packages/_gpaw.cpython-36m-x86_64-linux-gnu.so
+ase:    /home/user/.local/lib/python3.6/site-packages/ase (version 3.15.0)
+numpy:  /home/user/.local/lib/python3.6/site-packages/numpy (version 1.14.0)
+scipy:  /home/user/.local/lib/python3.6/site-packages/scipy (version 1.0.0)
+units:  Angstrom and eV
+cores:  1
+
+Input parameters:
+  basis: dzp
+  kpts: [40 40  1]
+  mode: lcao
+
+System changes: positions, numbers, cell, pbc, initial_charges, initial_magmoms 
+
+Initialize ...
+
+C-setup:
+  name: Carbon
+  id: d60576a1f549371a163e72552ca58787
+  Z: 6
+  valence: 4
+  core: 2
+  charge: 0.0
+  file: /usr/share/gpaw-setups/C.LDA.gz
+  cutoffs: 0.64(comp), 1.14(filt), 1.14(core), lmax=2
+  valence states:
+                energy  radius
+    2s(2.00)   -13.639   0.635
+    2p(2.00)    -5.414   0.635
+    *s          13.573   0.635
+    *p          21.797   0.635
+    *d           0.000   0.635
+
+  LCAO basis set for C:
+    Name: dzp
+    File: /usr/share/gpaw-setups/C.dzp.basis.gz
+    Number of radial functions: 5
+    Number of spherical harmonics: 13
+      l=0, rc=5.5469 Bohr: 2s-sz confined orbital
+      l=1, rc=6.6719 Bohr: 2p-sz confined orbital
+      l=0, rc=3.0312 Bohr: 2s-dz split-valence wave
+      l=1, rc=3.7500 Bohr: 2p-dz split-valence wave
+      l=2, rc=6.6719 Bohr: d-type Gaussian polarization
+
+Reference energy: -2037.605076
+
+Spin-paired calculation
+
+Occupation numbers:
+  Fermi-Dirac: width=0.1000 eV
+
+Convergence criteria:
+  Maximum total energy change: 0.0005 eV / electron
+  Maximum integral of absolute density change: 0.0001 electrons
+  Maximum integral of absolute eigenstate change: 4e-08 eV^2
+  Maximum number of iterations: 333
+
+Symmetries present (total): 8
+
+  ( 1  1  0)  ( 1  1  0)  ( 1  0  0)  ( 1  0  0)  (-1  0  0)  (-1  0  0)
+  ( 0 -1  0)  ( 0 -1  0)  ( 0  1  0)  ( 0  1  0)  ( 0 -1  0)  ( 0 -1  0)
+  ( 0  0  1)  ( 0  0 -1)  ( 0  0  1)  ( 0  0 -1)  ( 0  0  1)  ( 0  0 -1)
+
+  (-1 -1  0)  (-1 -1  0)
+  ( 0  1  0)  ( 0  1  0)
+  ( 0  0  1)  ( 0  0 -1)
+Note: your k-points are not as symmetric as your crystal!
+
+1600 k-points: 40 x 40 x 1 Monkhorst-Pack grid
+800 k-points in the irreducible part of the Brillouin zone
+       k-points in crystal coordinates                weights
+   0:     0.01250000   -0.48750000    0.00000000          2/1600
+   1:     0.01250000   -0.46250000    0.00000000          2/1600
+   2:     0.01250000   -0.43750000    0.00000000          2/1600
+   3:     0.01250000   -0.41250000    0.00000000          2/1600
+   4:     0.01250000   -0.38750000    0.00000000          2/1600
+   5:     0.01250000   -0.36250000    0.00000000          2/1600
+   6:     0.01250000   -0.33750000    0.00000000          2/1600
+   7:     0.01250000   -0.31250000    0.00000000          2/1600
+   8:     0.01250000   -0.28750000    0.00000000          2/1600
+   9:     0.01250000   -0.26250000    0.00000000          2/1600
+          ...
+ 799:     0.48750000    0.48750000    0.00000000          2/1600
+
+Wave functions: LCAO
+  Diagonalizer: Serial LAPACK
+  Atomic Correction: dense with blas
+  Datatype: complex
+  Eigensolver: None 
+
+LCAO using direct dense diagonalizer 
+
+Densities:
+  Coarse grid: 12*12*32 grid
+  Fine grid: 24*24*64 grid
+  Total Charge: 0.000000 
+
+Density mixing:
+  Method: separate
+  Backend: pulay
+  Linear mixing parameter: 0.05
+  Mixing with 5 old densities
+  Damping of long wave oscillations: 50 
+
+Hamiltonian:
+  XC and Coulomb potentials evaluated on a 24*24*64 grid
+  Using the LDA Exchange-Correlation functional
+  Interpolation: tri-quintic (5. degree polynomial)
+  Poisson solver: Jacobi solver with 4 multi-grid levels
+    Coarsest grid: 3 x 3 x 8 points
+    Stencil: 8*3+1=25 point O(h^6) finite-difference Laplacian
+    Tolerance: 2.000000e-10
+    Max iterations: 1000 
+
+Memory estimate:
+  Process memory now: 666.66 MiB
+  Calculator: 26.84 MiB
+    Density: 2.51 MiB
+      Arrays: 0.91 MiB
+      Localized functions: 1.25 MiB
+      Mixer: 0.35 MiB
+    Hamiltonian: 1.38 MiB
+      Arrays: 0.60 MiB
+      XC: 0.00 MiB
+      Poisson: 0.68 MiB
+      vbar: 0.10 MiB
+    Wavefunctions: 22.95 MiB
+      C [qnM]: 2.54 MiB
+      S, T [2 x qmm]: 16.50 MiB
+      P [aqMi]: 0.52 MiB
+      TCI: 0.00 MiB
+      BasisFunctions: 3.39 MiB
+      Eigensolver: 0.00 MiB
+
+Total number of cores used: 1
+
+Number of atoms: 2
+Number of atomic orbitals: 26
+Number of bands in calculation: 8
+Bands to converge: occupied states only
+Number of valence electrons: 8
+
+... initialized
+
+Initializing position-dependent things.
+
+Density initialized from atomic densities
+                 
+                 
+                 
+                 
+       CC        
+                 
+                 
+                 
+                 
+
+Positions:
+   0 C      0.615250    0.355215    3.354000
+   1 C      0.615250    1.776074    3.354000
+
+Unit cell:
+           periodic     x           y           z      points  spacing
+  1. axis:    yes    2.461000    0.000000    0.000000    12     0.1776
+  2. axis:    yes   -1.230500    2.131289    0.000000    12     0.1776
+  3. axis:    yes    0.000000    0.000000    6.708000    32     0.2096
+
+                     log10-error:    total        iterations:
+           time      wfs    density  energy       fermi  poisson
+iter:   1  08:14:22          +inf   -19.945715    2      15     
