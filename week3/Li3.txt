@@ -1,0 +1,248 @@
+
+  ___ ___ ___ _ _ _  
+ |   |   |_  | | | | 
+ | | | | | . | | | | 
+ |__ |  _|___|_____|  1.2.0
+ |___|_|             
+
+User:   user@ubuntu
+Date:   Mon Mar  5 07:37:14 2018
+Arch:   x86_64
+Pid:    11444
+Python: 3.6.3
+gpaw:   /usr/lib/python3/dist-packages/gpaw
+_gpaw:  /usr/lib/python3/dist-packages/_gpaw.cpython-36m-x86_64-linux-gnu.so
+ase:    /home/user/.local/lib/python3.6/site-packages/ase (version 3.15.0)
+numpy:  /home/user/.local/lib/python3.6/site-packages/numpy (version 1.14.0)
+scipy:  /home/user/.local/lib/python3.6/site-packages/scipy (version 1.0.0)
+units:  Angstrom and eV
+cores:  1
+
+Input parameters:
+  basis: dzp
+  kpts: [16 16 16]
+  mode: lcao
+
+System changes: positions, numbers, cell, pbc, initial_charges, initial_magmoms 
+
+Initialize ...
+
+Mg-setup:
+  name: Magnesium
+  id: 1877059fa28a1f3bce57eebec9b5564a
+  Z: 12
+  valence: 10
+  core: 2
+  charge: 0.0
+  file: /usr/share/gpaw-setups/Mg.LDA.gz
+  cutoffs: 1.03(comp), 1.86(filt), 0.54(core), lmax=2
+  valence states:
+                energy  radius
+    2s(2.00)   -79.291   1.090
+    3s(2.00)    -4.782   1.090
+    2p(6.00)   -46.725   1.085
+    3p(0.00)    -1.374   1.085
+    *d           0.000   1.037
+
+  LCAO basis set for Mg:
+    Name: dzp
+    File: /usr/share/gpaw-setups/Mg.dzp.basis.gz
+    Number of radial functions: 9
+    Number of spherical harmonics: 19
+      l=0, rc=2.7969 Bohr: 2s-sz confined orbital
+      l=0, rc=9.2344 Bohr: 3s-sz confined orbital
+      l=1, rc=3.1406 Bohr: 2p-sz confined orbital
+      l=1, rc=12.7188 Bohr: 3p-sz confined orbital
+      l=0, rc=1.8125 Bohr: 2s-dz split-valence wave
+      l=0, rc=5.5156 Bohr: 3s-dz split-valence wave
+      l=1, rc=2.0938 Bohr: 2p-dz split-valence wave
+      l=1, rc=7.7969 Bohr: 3p-dz split-valence wave
+      l=1, rc=9.2344 Bohr: p-type Gaussian polarization
+
+Reference energy: -10854.460033
+
+Spin-paired calculation
+
+Occupation numbers:
+  Fermi-Dirac: width=0.1000 eV
+
+Convergence criteria:
+  Maximum total energy change: 0.0005 eV / electron
+  Maximum integral of absolute density change: 0.0001 electrons
+  Maximum integral of absolute eigenstate change: 4e-08 eV^2
+  Maximum number of iterations: 333
+
+Symmetries present (total): 12
+
+  ( 1  1  0)  ( 1  1  0)  ( 1  0  0)  ( 1  0  0)  ( 0  1  0)  ( 0  1  0)
+  ( 0 -1  0)  ( 0 -1  0)  ( 0  1  0)  ( 0  1  0)  (-1 -1  0)  (-1 -1  0)
+  ( 0  0  1)  ( 0  0 -1)  ( 0  0  1)  ( 0  0 -1)  ( 0  0  1)  ( 0  0 -1)
+
+  ( 0 -1  0)  ( 0 -1  0)  (-1  0  0)  (-1  0  0)  (-1 -1  0)  (-1 -1  0)
+  (-1  0  0)  (-1  0  0)  ( 1  1  0)  ( 1  1  0)  ( 1  0  0)  ( 1  0  0)
+  ( 0  0  1)  ( 0  0 -1)  ( 0  0  1)  ( 0  0 -1)  ( 0  0  1)  ( 0  0 -1)
+Note: your k-points are not as symmetric as your crystal!
+
+4096 k-points: 16 x 16 x 16 Monkhorst-Pack grid
+576 k-points in the irreducible part of the Brillouin zone
+       k-points in crystal coordinates                weights
+   0:     0.03125000   -0.03125000    0.03125000          4/4096
+   1:     0.03125000   -0.03125000    0.09375000          4/4096
+   2:     0.03125000   -0.03125000    0.15625000          4/4096
+   3:     0.03125000   -0.03125000    0.21875000          4/4096
+   4:     0.03125000   -0.03125000    0.28125000          4/4096
+   5:     0.03125000   -0.03125000    0.34375000          4/4096
+   6:     0.03125000   -0.03125000    0.40625000          4/4096
+   7:     0.03125000   -0.03125000    0.46875000          4/4096
+   8:     0.03125000    0.03125000    0.03125000          4/4096
+   9:     0.03125000    0.03125000    0.09375000          4/4096
+          ...
+ 575:     0.46875000    0.46875000    0.46875000          4/4096
+
+Wave functions: LCAO
+  Diagonalizer: Serial LAPACK
+  Atomic Correction: dense with blas
+  Datatype: complex
+  Eigensolver: None 
+
+LCAO using direct dense diagonalizer 
+
+Densities:
+  Coarse grid: 24*24*44 grid
+  Fine grid: 48*48*88 grid
+  Total Charge: 0.000000 
+
+Density mixing:
+  Method: separate
+  Backend: pulay
+  Linear mixing parameter: 0.05
+  Mixing with 5 old densities
+  Damping of long wave oscillations: 50 
+
+Hamiltonian:
+  XC and Coulomb potentials evaluated on a 48*48*88 grid
+  Using the LDA Exchange-Correlation functional
+  Interpolation: tri-quintic (5. degree polynomial)
+  Poisson solver: Jacobi solver with 4 multi-grid levels
+    Coarsest grid: 6 x 6 x 11 points
+    Stencil: 8*3+1=25 point O(h^6) finite-difference Laplacian
+    Tolerance: 2.000000e-10
+    Max iterations: 1000 
+
+Memory estimate:
+  Process memory now: 435.32 MiB
+  Calculator: 65.11 MiB
+    Density: 13.04 MiB
+      Arrays: 5.03 MiB
+      Localized functions: 6.08 MiB
+      Mixer: 1.93 MiB
+    Hamiltonian: 7.45 MiB
+      Arrays: 3.29 MiB
+      XC: 0.00 MiB
+      Poisson: 3.75 MiB
+      vbar: 0.42 MiB
+    Wavefunctions: 44.62 MiB
+      C [qnM]: 5.34 MiB
+      S, T [2 x qmm]: 25.38 MiB
+      P [aqMi]: 0.54 MiB
+      TCI: 0.00 MiB
+      BasisFunctions: 13.35 MiB
+      Eigensolver: 0.00 MiB
+
+Total number of cores used: 1
+
+Number of atoms: 2
+Number of atomic orbitals: 38
+Number of bands in calculation: 16
+Bands to converge: occupied states only
+Number of valence electrons: 20
+
+... initialized
+
+Initializing position-dependent things.
+
+Density initialized from atomic densities
+                  
+                  
+                  
+                  
+         Mg       
+                  
+                  
+                  
+                  
+                  
+       Mg         
+                  
+                  
+                  
+                  
+
+Positions:
+   0 Mg     0.000000    0.000000    0.000000
+   1 Mg     0.000000    3.007995    4.230520
+
+Unit cell:
+           periodic     x           y           z      points  spacing
+  1. axis:    yes    5.210000    0.000000    0.000000    24     0.1880
+  2. axis:    yes   -2.605000    4.511992    0.000000    24     0.1880
+  3. axis:    yes    0.000000    0.000000    8.461040    44     0.1923
+
+                     log10-error:    total        iterations:
+           time      wfs    density  energy       fermi  poisson
+iter:   1  07:37:26          +inf    -0.312498    4      11     
+iter:   2  07:39:44         -1.69    -0.313532    2      4      
+iter:   3  07:42:02         -1.71    -0.321545    3      6      
+iter:   4  07:44:20         -3.09    -0.321739    2      4      
+iter:   5  07:46:39         -2.58    -0.321548    2      5      
+iter:   6  07:48:58         -4.21    -0.321465    1      2      
+
+Converged after 6 iterations.
+
+Energy contributions relative to reference atoms: (reference = -10854.460033)
+
+Kinetic:         -0.390683
+Potential:       +0.216353
+External:        +0.000000
+XC:              -0.165755
+Entropy (-ST):   -0.000451
+Local:           +0.018846
+--------------------------
+Free energy:     -0.321691
+Extrapolated:    -0.321465
+
+Fermi level: -1.74251
+
+Warning: Showing only first 2 kpts
+ Kpt  Band  Eigenvalues  Occupancy
+  0     8     -4.22868    0.00195
+  0     9     -2.95174    0.00195
+  0    10     -1.18808    0.00001
+  0    11      2.09097    0.00000
+
+  1     8     -4.21778    0.00195
+  1     9     -3.00622    0.00195
+  1    10     -1.10521    0.00000
+  1    11      2.10120    0.00000
+
+
+--------|
+  Pseudo density:                   43.397     0.004   0.0% |
+   Calculate density matrix:         0.023     0.023   0.0% |
+   Construct density:               43.370    43.370  50.4% |-------------------|
+ LCAO eigensolver:                   3.338     0.027   0.0% |
+  Calculate projections:             0.024     0.024   0.0% |
+  DenseAtomicCorrection:             0.114     0.114   0.1% |
+  Distribute overlap matrix:         0.015     0.015   0.0% |
+  Orbital Layouts:                   0.558     0.558   0.6% |
+  Potential matrix:                  0.238     0.238   0.3% |
+  Sum over cells:                    2.362     2.362   2.7% ||
+Set symmetry:                        1.927     1.927   2.2% ||
+TCI: Calculate S, T, P:              4.572     4.572   5.3% |-|
+TCI: Evaluate splines:               0.241     0.241   0.3% |
+Other:                               0.595     0.595   0.7% |
+-----------------------------------------------------------
+Total:                                        86.029 100.0%
+
+Memory usage: 488.43 MiB
+Date: Mon Mar  5 07:37:22 2018
