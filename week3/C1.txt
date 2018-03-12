@@ -6,9 +6,9 @@
  |___|_|             
 
 User:   user@ubuntu
-Date:   Mon Mar  5 08:07:00 2018
+Date:   Mon Mar 12 06:53:13 2018
 Arch:   x86_64
-Pid:    11520
+Pid:    21987
 Python: 3.6.3
 gpaw:   /usr/lib/python3/dist-packages/gpaw
 _gpaw:  /usr/lib/python3/dist-packages/_gpaw.cpython-36m-x86_64-linux-gnu.so
@@ -99,8 +99,8 @@ Wave functions: LCAO
 LCAO using direct dense diagonalizer 
 
 Densities:
-  Coarse grid: 12*48*48 grid
-  Fine grid: 24*96*96 grid
+  Coarse grid: 8*48*48 grid
+  Fine grid: 16*96*96 grid
   Total Charge: 0.000000 
 
 Density mixing:
@@ -111,33 +111,33 @@ Density mixing:
   Damping of long wave oscillations: 50 
 
 Hamiltonian:
-  XC and Coulomb potentials evaluated on a 24*96*96 grid
+  XC and Coulomb potentials evaluated on a 16*96*96 grid
   Using the LDA Exchange-Correlation functional
   Interpolation: tri-quintic (5. degree polynomial)
-  Poisson solver: Jacobi solver with 4 multi-grid levels
-    Coarsest grid: 3 x 12 x 12 points
+  Poisson solver: Jacobi solver with 5 multi-grid levels
+    Coarsest grid: 1 x 6 x 6 points
     Stencil: 6*3+1=19 point O(h^6) finite-difference Laplacian
     Tolerance: 2.000000e-10
     Max iterations: 1000 
 
 Memory estimate:
-  Process memory now: 666.66 MiB
-  Calculator: 17.23 MiB
-    Density: 7.92 MiB
-      Arrays: 5.36 MiB
-      Localized functions: 0.54 MiB
-      Mixer: 2.02 MiB
-    Hamiltonian: 7.55 MiB
-      Arrays: 3.51 MiB
+  Process memory now: 294.70 MiB
+  Calculator: 12.59 MiB
+    Density: 5.54 MiB
+      Arrays: 3.57 MiB
+      Localized functions: 0.62 MiB
+      Mixer: 1.35 MiB
+    Hamiltonian: 5.06 MiB
+      Arrays: 2.34 MiB
       XC: 0.00 MiB
-      Poisson: 4.00 MiB
-      vbar: 0.04 MiB
-    Wavefunctions: 1.76 MiB
+      Poisson: 2.67 MiB
+      vbar: 0.05 MiB
+    Wavefunctions: 1.99 MiB
       C [qnM]: 0.04 MiB
       S, T [2 x qmm]: 0.26 MiB
       P [aqMi]: 0.01 MiB
       TCI: 0.00 MiB
-      BasisFunctions: 1.45 MiB
+      BasisFunctions: 1.68 MiB
       Eigensolver: 0.00 MiB
 
 Total number of cores used: 1
@@ -153,74 +153,74 @@ Number of valence electrons: 4
 Initializing position-dependent things.
 
 Density initialized from atomic densities
-       .-----.  
-      /|     |  
-     / |     |  
-    /  |     |  
-   /   |     |  
-  /    |     |  
- *     |     |  
- |     |     |  
- |     |     |  
- |     C     |  
- |     |     |  
- |     |     |  
- |     .-----.  
- |    /     /   
- |   /     /    
- |  /     /     
- | /     /      
- |/     /       
- *-----*        
+       .--.  
+      /|  |  
+     / |  |  
+    /  |  |  
+   /   |  |  
+  /    |  |  
+ *     |  |  
+ |     |  |  
+ |     |  |  
+ |   C |  |  
+ |     |  |  
+ |     |  |  
+ |     .--.  
+ |    /  /   
+ |   /  /    
+ |  /  /     
+ | /  /      
+ |/  /       
+ *--*        
 
 Positions:
-   0 C      1.230000    5.000000    5.000000
+   0 C      0.710000    5.000000    5.000000
 
 Unit cell:
            periodic     x           y           z      points  spacing
-  1. axis:    yes    2.460000    0.000000    0.000000    12     0.2050
+  1. axis:    yes    1.420000    0.000000    0.000000     8     0.1775
   2. axis:    no     0.000000   10.000000    0.000000    48     0.2083
   3. axis:    no     0.000000    0.000000   10.000000    48     0.2083
 
                      log10-error:    total        iterations:
            time      wfs    density  energy       fermi  poisson
-iter:   1  08:07:02          +inf    -2.192637    3      26     
-iter:   2  08:07:02         -1.01    -2.177354    3      5      
-iter:   3  08:07:03         -1.04    -2.086108    33     14     
-iter:   4  08:07:04         -1.90    -2.084923    3      5      
-iter:   5  08:07:04         -2.31    -2.084805    3      5      
-iter:   6  08:07:05         -2.76    -2.084912    3      5      
-iter:   7  08:07:06         -3.87    -2.084916    2      2      
-iter:   8  08:07:06         -4.92    -2.084858    2      1      
+iter:   1  06:53:14          +inf    -8.000453    2      16     
+iter:   2  06:53:15         -1.03    -7.996312    3      6      
+iter:   3  06:53:16         -1.05    -7.979599    29     10     
+iter:   4  06:53:17         -1.77    -7.984894    27     7      
+iter:   5  06:53:18         -1.65    -7.974930    29     6      
+iter:   6  06:53:19         -2.32    -7.974649    3      5      
+iter:   7  06:53:20         -2.52    -7.974472    3      5      
+iter:   8  06:53:21         -4.98    -7.974500    1      1      
 
 Converged after 8 iterations.
 
-Dipole moment: (0.074021, -0.000000, 0.000000) |e|*Ang
+Dipole moment: (0.163818, -0.000000, 0.000000) |e|*Ang
 
 Energy contributions relative to reference atoms: (reference = -1018.802538)
 
-Kinetic:         -4.313489
-Potential:       +2.689554
+Kinetic:         -5.300240
+Potential:       +2.974511
 External:        +0.000000
-XC:              -0.512483
-Entropy (-ST):   -0.073118
-Local:           +0.088119
+XC:              -5.754548
+Entropy (-ST):   -0.007984
+Local:           +0.109770
 --------------------------
-Free energy:     -2.121417
-Extrapolated:    -2.084858
+Free energy:     -7.978492
+Extrapolated:    -7.974500
 
-Fermi level: -5.76605
+Fermi level: -5.65664
 
 Warning: Showing only first 2 kpts
  Kpt  Band  Eigenvalues  Occupancy
-  0     0    -14.84405    0.04000
-  0     1     -6.14969    0.03916
-  0     2     -6.14969    0.03916
-  0     3     -1.20747    0.00000
+  0     0    -20.55475    0.04000
+  0     1     -9.79840    0.04000
+  0     2     -9.79840    0.04000
+  0     3      8.37485    0.00000
 
-  1     0    -14.84083    0.04000
-  1     1     -6.14681    0.03913
-  1     2     -6.14681    0.03913
-  1     3     -1.22148    0.00000
+  1     0    -20.54602    0.04000
+  1     1     -9.78490    0.04000
+  1     2     -9.78490    0.04000
+  1     3      8.38580    0.00000
 
 

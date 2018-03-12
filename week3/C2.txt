@@ -6,9 +6,9 @@
  |___|_|             
 
 User:   user@ubuntu
-Date:   Mon Mar  5 08:14:16 2018
+Date:   Mon Mar 12 06:53:21 2018
 Arch:   x86_64
-Pid:    11520
+Pid:    21987
 Python: 3.6.3
 gpaw:   /usr/lib/python3/dist-packages/gpaw
 _gpaw:  /usr/lib/python3/dist-packages/_gpaw.cpython-36m-x86_64-linux-gnu.so
@@ -55,7 +55,7 @@ C-setup:
       l=1, rc=3.7500 Bohr: 2p-dz split-valence wave
       l=2, rc=6.6719 Bohr: d-type Gaussian polarization
 
-Reference energy: -2037.605076
+Reference energy: -18338.445680
 
 Spin-paired calculation
 
@@ -104,8 +104,8 @@ Wave functions: LCAO
 LCAO using direct dense diagonalizer 
 
 Densities:
-  Coarse grid: 12*12*32 grid
-  Fine grid: 24*24*64 grid
+  Coarse grid: 32*32*32 grid
+  Fine grid: 64*64*64 grid
   Total Charge: 0.000000 
 
 Density mixing:
@@ -116,68 +116,90 @@ Density mixing:
   Damping of long wave oscillations: 50 
 
 Hamiltonian:
-  XC and Coulomb potentials evaluated on a 24*24*64 grid
+  XC and Coulomb potentials evaluated on a 64*64*64 grid
   Using the LDA Exchange-Correlation functional
   Interpolation: tri-quintic (5. degree polynomial)
-  Poisson solver: Jacobi solver with 4 multi-grid levels
-    Coarsest grid: 3 x 3 x 8 points
+  Poisson solver: Jacobi solver with 7 multi-grid levels
+    Coarsest grid: 1 x 1 x 1 points
     Stencil: 8*3+1=25 point O(h^6) finite-difference Laplacian
     Tolerance: 2.000000e-10
     Max iterations: 1000 
 
 Memory estimate:
-  Process memory now: 666.66 MiB
-  Calculator: 26.84 MiB
-    Density: 2.51 MiB
-      Arrays: 0.91 MiB
-      Localized functions: 1.25 MiB
-      Mixer: 0.35 MiB
-    Hamiltonian: 1.38 MiB
-      Arrays: 0.60 MiB
+  Process memory now: 296.60 MiB
+  Calculator: 1636.04 MiB
+    Density: 17.87 MiB
+      Arrays: 6.50 MiB
+      Localized functions: 8.87 MiB
+      Mixer: 2.50 MiB
+    Hamiltonian: 9.81 MiB
+      Arrays: 4.25 MiB
       XC: 0.00 MiB
-      Poisson: 0.68 MiB
-      vbar: 0.10 MiB
-    Wavefunctions: 22.95 MiB
-      C [qnM]: 2.54 MiB
-      S, T [2 x qmm]: 16.50 MiB
-      P [aqMi]: 0.52 MiB
+      Poisson: 4.86 MiB
+      vbar: 0.70 MiB
+    Wavefunctions: 1608.36 MiB
+      C [qnM]: 205.66 MiB
+      S, T [2 x qmm]: 1336.82 MiB
+      P [aqMi]: 41.78 MiB
       TCI: 0.00 MiB
-      BasisFunctions: 3.39 MiB
+      BasisFunctions: 24.10 MiB
       Eigensolver: 0.00 MiB
 
 Total number of cores used: 1
 
-Number of atoms: 2
-Number of atomic orbitals: 26
-Number of bands in calculation: 8
+Number of atoms: 18
+Number of atomic orbitals: 234
+Number of bands in calculation: 72
 Bands to converge: occupied states only
-Number of valence electrons: 8
+Number of valence electrons: 72
 
 ... initialized
 
 Initializing position-dependent things.
 
 Density initialized from atomic densities
-                 
-                 
-                 
-                 
-       CC        
-                 
-                 
-                 
-                 
+                                      
+                                      
+                                      
+                                      
+           C     C     C              
+          C C   C C   C C             
+            C C   C C   C C           
+             C     C     C            
+                                      
+                                      
+                                      
+                                      
 
 Positions:
    0 C      0.615250    0.355215    3.354000
    1 C      0.615250    1.776074    3.354000
+   2 C      3.076250    0.355215    3.354000
+   3 C      3.076250    1.776074    3.354000
+   4 C      5.537250    0.355215    3.354000
+   5 C      5.537250    1.776074    3.354000
+   6 C     -0.615250    2.486503    3.354000
+   7 C     -0.615250    3.907362    3.354000
+   8 C      1.845750    2.486503    3.354000
+   9 C      1.845750    3.907362    3.354000
+  10 C      4.306750    2.486503    3.354000
+  11 C      4.306750    3.907362    3.354000
+  12 C     -1.845750    4.617792    3.354000
+  13 C     -1.845750    6.038651    3.354000
+  14 C      0.615250    4.617792    3.354000
+  15 C      0.615250    6.038651    3.354000
+  16 C      3.076250    4.617792    3.354000
+  17 C      3.076250    6.038651    3.354000
 
 Unit cell:
            periodic     x           y           z      points  spacing
-  1. axis:    yes    2.461000    0.000000    0.000000    12     0.1776
-  2. axis:    yes   -1.230500    2.131289    0.000000    12     0.1776
+  1. axis:    yes    7.383000    0.000000    0.000000    32     0.1998
+  2. axis:    yes   -3.691500    6.393866    0.000000    32     0.1998
   3. axis:    yes    0.000000    0.000000    6.708000    32     0.2096
 
                      log10-error:    total        iterations:
            time      wfs    density  energy       fermi  poisson
-iter:   1  08:14:22          +inf   -19.945715    2      15     
+iter:   1  06:56:32          +inf  -178.658226    2      15     
+iter:   2  07:08:09         -0.92  -178.215311    3      7      
+iter:   3  07:19:46         -0.94  -175.703278    29     10     
+iter:   4  07:31:26         -1.65  -176.014430    27     8      
