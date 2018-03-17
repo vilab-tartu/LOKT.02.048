@@ -1,0 +1,253 @@
+
+  ___ ___ ___ _ _ _  
+ |   |   |_  | | | | 
+ | | | | | . | | | | 
+ |__ |  _|___|_____|  1.2.0
+ |___|_|             
+
+User:   user@ubuntu
+Date:   Sat Mar 17 11:49:06 2018
+Arch:   x86_64
+Pid:    58348
+Python: 3.6.3
+gpaw:   /usr/lib/python3/dist-packages/gpaw
+_gpaw:  /usr/lib/python3/dist-packages/_gpaw.cpython-36m-x86_64-linux-gnu.so
+ase:    /home/user/.local/lib/python3.6/site-packages/ase (version 3.15.0)
+numpy:  /home/user/.local/lib/python3.6/site-packages/numpy (version 1.14.2)
+scipy:  /home/user/.local/lib/python3.6/site-packages/scipy (version 1.0.0)
+units:  Angstrom and eV
+cores:  1
+
+Input parameters:
+  mode: {ecut: 100.0,
+         name: pw}
+
+System changes: positions, numbers, cell, pbc, initial_charges, initial_magmoms 
+
+Initialize ...
+
+Al-setup:
+  name: Aluminium
+  id: 2e6447feaea722efcff26bf034b25f30
+  Z: 13
+  valence: 3
+  core: 10
+  charge: 0.0
+  file: /usr/share/gpaw-setups/Al.LDA.gz
+  cutoffs: 1.08(comp), 1.91(filt), 2.36(core), lmax=2
+  valence states:
+                energy  radius
+    3s(2.00)    -7.830   1.085
+    3p(1.00)    -2.783   1.085
+    *s          19.382   1.085
+    *p          24.428   1.085
+    *d           0.000   1.085
+
+  Using partial waves for Al as LCAO basis
+
+Reference energy: -59205.791766
+
+Spin-paired calculation
+
+Occupation numbers:
+  Fermi-Dirac: width=0.1000 eV
+
+Convergence criteria:
+  Maximum total energy change: 0.0005 eV / electron
+  Maximum integral of absolute density change: 0.0001 electrons
+  Maximum integral of absolute eigenstate change: 4e-08 eV^2
+  Maximum number of iterations: 333
+
+Symmetries present (total): 1
+
+  ( 1  0  0)
+  ( 0  1  0)
+  ( 0  0  1)
+
+1 k-point (Gamma)
+1 k-point in the irreducible part of the Brillouin zone
+       k-points in crystal coordinates                weights
+   0:     0.00000000    0.00000000    0.00000000          1/1
+
+Wave functions: Plane wave expansion
+  Cutoff energy: 100.000 eV
+  Number of coefficients: 971 (reduced to 486)
+  Using Numpy's FFT
+  Eigensolver: None  MatrixOperator buffer_size: default value or 
+                              see value of nblock in input file
+Diagonalizer layout: Serial LAPACKOrthonormalizer layout: Serial LAPACK 
+
+Davidson(niter=1, smin=None, normalize=True) 
+
+Densities:
+  Coarse grid: 12*12*35 grid
+  Fine grid: 24*24*70 grid
+  Total Charge: 0.000000 
+
+Density mixing:
+  Method: separate
+  Backend: pulay
+  Linear mixing parameter: 0.05
+  Mixing with 5 old densities
+  Damping of long wave oscillations: 50 
+
+Hamiltonian:
+  XC and Coulomb potentials evaluated on a 24*24*70 grid
+  Using the LDA Exchange-Correlation functional
+ 
+
+Memory estimate:
+  Process memory now: 156.61 MiB
+  Calculator: 3.93 MiB
+    Density: 2.13 MiB
+      Arrays: 1.00 MiB
+      Localized functions: 0.74 MiB
+      Mixer: 0.38 MiB
+    Hamiltonian: 0.67 MiB
+      Arrays: 0.65 MiB
+      XC: 0.00 MiB
+      Poisson: 0.00 MiB
+      vbar: 0.02 MiB
+    Wavefunctions: 1.14 MiB
+      Arrays psit_nG: 0.27 MiB
+      Eigensolver: 0.40 MiB
+      Projections: 0.03 MiB
+      Projectors: 0.05 MiB
+      Overlap op: 0.28 MiB
+      PW-descriptor: 0.10 MiB
+
+Total number of cores used: 1
+
+Number of atoms: 9
+Number of atomic orbitals: 36
+Number of bands in calculation: 36
+Bands to converge: occupied states only
+Number of valence electrons: 27
+
+... initialized
+
+Initializing position-dependent things.
+
+Density initialized from atomic densities
+Creating initial wave functions:
+  36 bands from LCAO basis set
+
+                                
+                                
+                                
+                                
+                                
+            Al     Al           
+       Al     Al                
+             Al     Al          
+        Al     Al               
+                                
+                                
+                                
+                     Al         
+                                
+                                
+                                
+                                
+
+Positions:
+   0 Al     0.000000    1.653406    7.338269
+   1 Al     2.863782    1.653406    7.338269
+   2 Al     1.431891    4.133514    7.338269
+   3 Al     4.295674    4.133514    7.338269
+   4 Al     0.000000    0.000000    9.676537
+   5 Al     2.863782    0.000000    9.676537
+   6 Al     1.431891    2.480108    9.676537
+   7 Al     4.295674    2.480108    9.676537
+   8 Al     5.250268    0.826703    5.000000
+
+Unit cell:
+           periodic     x           y           z      points  spacing
+  1. axis:    yes    5.727565    0.000000    0.000000    12     0.4134
+  2. axis:    yes    2.863782    4.960217    0.000000    12     0.4134
+  3. axis:    no     0.000000    0.000000   14.676537    35     0.4193
+
+                     log10-error:    total        iterations:
+           time      wfs    density  energy       fermi  poisson
+iter:   1  11:49:08  +1.39   +inf   -34.692685    3             
+iter:   2  11:49:08  -0.14   +inf   -35.144694    3             
+iter:   3  11:49:08  -1.01   +inf   -35.205533    2             
+iter:   4  11:49:08  -1.60  -0.66   -34.069461    34            
+iter:   5  11:49:09  -2.00  -0.77   -33.487574    4             
+iter:   6  11:49:09  -1.61  -0.85   -32.914047    35            
+iter:   7  11:49:10  -2.16  -1.03   -32.819368    3             
+iter:   8  11:49:10  -2.53  -1.15   -32.787088    3             
+iter:   9  11:49:10  -2.38  -1.25   -32.744959    3             
+iter:  10  11:49:11  -2.88  -1.56   -32.746134    3             
+iter:  11  11:49:11  -3.57  -1.80   -32.746076    2             
+iter:  12  11:49:11  -3.38  -1.88   -32.741834    3             
+iter:  13  11:49:12  -4.11  -2.15   -32.739750    3             
+iter:  14  11:49:12  -4.59  -2.30   -32.738772    3             
+iter:  15  11:49:12  -4.59  -2.42   -32.739029    3             
+iter:  16  11:49:13  -4.89  -2.58   -32.739041    2             
+iter:  17  11:49:13  -5.34  -2.82   -32.738998    2             
+iter:  18  11:49:14  -5.56  -2.95   -32.739063    2             
+iter:  19  11:49:14  -5.94  -3.18   -32.739124    2             
+iter:  20  11:49:14  -6.24  -3.30   -32.739120    2             
+iter:  21  11:49:15  -6.67  -3.59   -32.739159    2             
+iter:  22  11:49:15  -6.99  -3.71   -32.739202    2             
+iter:  23  11:49:15  -7.26  -3.85   -32.739189    2             
+iter:  24  11:49:16  -7.49  -3.99   -32.739166    2             
+iter:  25  11:49:16  -7.90  -4.12   -32.739168    2             
+
+Converged after 25 iterations.
+
+Dipole moment: (9.746095, 2.189415, 0.063351) |e|*Ang
+
+Energy contributions relative to reference atoms: (reference = -59205.791766)
+
+Kinetic:        +33.190102
+Potential:      -22.297928
+External:        +0.000000
+XC:             -43.536819
+Entropy (-ST):   -0.604197
+Local:           +0.207575
+--------------------------
+Free energy:    -33.041266
+Extrapolated:   -32.739168
+
+Fermi level: -0.92292
+
+ Band  Eigenvalues  Occupancy
+    0     -9.55936    2.00000
+    1     -6.99808    2.00000
+    2     -4.52395    2.00000
+    3     -3.81630    2.00000
+    4     -3.75717    2.00000
+    5     -3.70381    2.00000
+    6     -3.63316    2.00000
+    7     -3.60900    2.00000
+    8     -3.47485    2.00000
+    9     -1.74336    1.99945
+   10     -1.21873    1.90129
+   11     -1.12613    1.76826
+   12     -0.99017    1.32412
+   13     -0.90202    0.89588
+   14     -0.87090    0.74565
+   15     -0.77308    0.36535
+   16      1.47498    0.00000
+   17      1.49624    0.00000
+   18      1.65491    0.00000
+   19      2.21407    0.00000
+   20      2.64768    0.00000
+   21      3.15678    0.00000
+   22      3.21901    0.00000
+   23      3.70904    0.00000
+   24      4.11315    0.00000
+   25      4.24194    0.00000
+   26      4.41818    0.00000
+   27      5.31137    0.00000
+   28      6.20501    0.00000
+   29      6.33400    0.00000
+   30      6.61224    0.00000
+   31      6.85940    0.00000
+   32      6.91960    0.00000
+   33      6.93725    0.00000
+   34      6.96760    0.00000
+   35      7.29948    0.00000
+
