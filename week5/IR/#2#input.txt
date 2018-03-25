@@ -1,0 +1,12 @@
+! TRAVIS input file
+! Created with TRAVIS version compiled at Jan 19 2014 05:12:16
+! Input file written at Thu Mar 26 12:52:09 2015.
+! Do you want to assign atom data to them (y/n)? [no] 
+
+! Use the advanced mode up to the function selection menu (y/n)? [no] 
+
+! Are the 3 cell vectors of the same size (yes/no)? [yes] 
+
+! Enter length of cell vector in pm: 
+1000
+! Atom type "X" has bond radius 0. Exclude it from the system (y/n)? [yes] 

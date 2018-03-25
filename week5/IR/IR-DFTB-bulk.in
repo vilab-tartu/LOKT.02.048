@@ -1,0 +1,108 @@
+@SET DATA_PATH   /usr/share/cp2k
+
+&FORCE_EVAL
+  METHOD Quickstep
+  &DFT
+    &MGRID
+      CUTOFF 500
+    &END MGRID
+    &QS
+! use density functional tight binding methos to calculate energy and forces
+      METHOD DFTB
+      &DFTB
+! use of self-consistent method
+          SELF_CONSISTENT    T
+! dispersion correction
+          DISPERSION         T
+! Assume orthogonal basis set 
+          ORTHOGONAL_BASIS   F
+! Use Ewald type method instead of direct sum for Coulomb interaction
+          DO_EWALD           F
+! Specify file that contains the names of Slater-Koster tables
+! distance dependent interaction parameter file
+          &PARAMETER
+          PARAM_FILE_PATH ${DATA_PATH}/DFTB/scc
+          PARAM_FILE_NAME  scc_parameter
+! Name of file with UFF parameters that will be used for the dispersion correction
+          UFF_FORCE_FIELD  uff_table
+          &END PARAMETER
+      &END DFTB
+    &END QS
+    &SCF
+! Generate an atomic density using the atomic code
+      SCF_GUESS ATOMIC
+      EPS_SCF 3.0E-7
+      MAX_SCF 2000
+! The orbital transformation (OT) method is a direct minimisation scheme that allows for efficient wave function optimisation
+      &OT
+! Type of preconditioner to be used with all minimization schemes.
+! Based on H-eS cholesky inversion, efficiencient and cheaper to construct. Recommended for large systems.
+        PRECONDITIONER  FULL_SINGLE_INVERSE
+        MINIMIZER  CG
+      &END
+    &END SCF
+    &PRINT
+      &MOMENTS
+       PERIODIC FALSE
+       &EACH
+         MD 1
+       &END
+       MAX_MOMENT 1
+       FILENAME =IR-DFTB-bulk-dipole.traj
+      &END MOMENTS
+     &END
+
+ &END DFT
+  &SUBSYS
+    &CELL
+      ABC [angstrom] 12 12 12
+      PERIODIC NONE
+    &END
+! geometry file in xyz format
+    &TOPOLOGY
+     COORD_FILE_NAME ./IR-32W.xyz
+     COORDINATE xyz
+    &END
+  &END SUBSYS
+&END FORCE_EVAL
+&GLOBAL
+  PRINT_LEVEL LOW
+  PROJECT WATER
+! type of calculation molecular dynamics
+  RUN_TYPE MD
+  WALLTIME 86000
+  EXTENDED_FFT_LENGTHS
+&END GLOBAL
+! If atoms are moved during the calculation in a geometry optimization or a molecular dynamics simulation 
+! it is required to create a MOTION section that contains the information related to either of both.
+&MOTION
+ &MD
+! definition of microcanonical ensemble
+   ENSEMBLE NVE
+! The length of an integration step
+   TIMESTEP 0.5
+! The number of MD steps to perform 
+   STEPS  100
+! The temperature in K used to initialize the velocities
+   TEMPERATURE 300
+   &PRINT
+     &ENERGY
+! print energy after each N (=20 here) MD steps.
+        &EACH
+           MD 20
+        &END
+     &END ENERGY
+! Level starting at which this proprety is printed
+     &PROGRAM_RUN_INFO
+        &EACH
+           MD 20
+        &END
+     &END PROGRAM_RUN_INFO
+   &END PRINT
+ &END MD
+&END MOTION
+! external section : specifies an external input file where to take positions
+#&EXT_RESTART
+! name of the restart file to be read
+# RESTART_FILE_NAME BULK-1.restart
+#&END

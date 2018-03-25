@@ -1,0 +1,51 @@
+! TRAVIS input file
+! Created with TRAVIS version compiled at Jan 19 2014 05:12:16
+! Input file written at Thu Mar 26 12:52:42 2015.
+! Do you want to assign atom data to them (y/n)? [no] 
+
+! Use the advanced mode up to the function selection menu (y/n)? [no] 
+
+! Are the 3 cell vectors of the same size (yes/no)? [yes] 
+
+! Enter length of cell vector in pm: 
+2000
+! Atom type "X" has bond radius 0. Exclude it from the system (y/n)? [yes] 
+
+! Accept these molecules (y) or change something (n)? [yes] 
+
+! Create images of the structural formulas (y/n)? [no] 
+
+! Which functions to compute (comma separated)?
+ir
+! Use the advanced mode for the main part (y/n)? [no] 
+
+! Enter the length of one trajectory time step in fs: [0.5] 
+
+! Compute IR spectrum of whole system (y/n)? [yes] 
+
+! Compute also IR spectra for certain molecule types (y/n)? [no] 
+
+! Obtain dipole vectors from wannier centers (y/n)? [yes] 
+
+! Which atom label do the wannier centers have (H, O, X)? [X] 
+
+! Enter the negative charge of the wannier centers (without sign): [2.0] 
+
+! Enter core charge (mind pseudopotentials!) for atom type H: [1.0] 
+
+! Enter core charge (mind pseudopotentials!) for atom type O: [6.0] 
+
+! Enter the resolution (=depth) of the dipole ACF (in time steps): [753] 
+
+! Calculate spectrum up to which wave number (cm^-1)? [5000.0 cm^-1] 
+
+! Convert intensity axis of spectrum to decibel (y/n)? [no] 
+
+! Skip repeated time steps (y/n)? [no] 
+
+! In which time step to start processing the trajectory? [1] 
+
+! How many time steps to use (from this position on)? [all] 
+
+! Use every n-th time step from the trajectory? [1] 
+

@@ -1,0 +1,17 @@
+! TRAVIS input file
+! Created with TRAVIS version compiled at Jan 19 2014 05:12:16
+! Input file written at Thu Mar 26 12:51:40 2015.
+! Do you want to assign atom data to them (y/n)? [no] 
+y
+! Do you want to rename this element (y/n)? [yes] 
+y
+! Enter new name for X: [X] 
+X
+! Do you want to copy the atom parameters from another element (y/n)? [yes] 
+n
+! Please enter covalent radius in pm: [100] 
+
+! Please enter atom mass in u: 
+
+! There is no default value. Enter a positive integer number.
+! Please enter atom mass in u: 

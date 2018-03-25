@@ -1,0 +1,43 @@
+! TRAVIS input file
+! Created with TRAVIS version compiled at Mar 22 2018 06:32:03
+! Input file written at Thu Mar 22 07:24:22 2018.
+! Do you want to assign atom data to them (y/n)? [no] 
+
+! Use the advanced mode until the analysis selection menu (y/n)? [no] 
+
+! Are the 3 cell vectors of the same size (yes/no)? [yes] 
+
+! Enter length of cell vector in pm: 
+2000
+! Create images of the structural formulas (y/n)? [no] 
+
+! Accept these molecules (y) or change something (n)? [yes] 
+
+! Which functions to compute (comma separated)?
+ir
+! Use the advanced mode for the main part (y/n)? [no] 
+
+! Enter the length of one trajectory time step in fs: [0.5] 
+
+! Which dipole mode to set for all molecules at once? [none] 
+
+! Change dipole mode for a molecule (y/n)? [no] 
+
+! Which molecule should be observed (H2O=1, X=2)? 
+1
+! Enter the resolution (=depth) of the ACF (in time steps): [753] 
+
+! Calculate spectrum up to which wave number (cm^-1)? [5000.00 cm^-1] 
+
+! Add another observation (y/n)? [no] 
+
+! Compute IR spectrum of whole system (y/n) [no] 
+
+! Skip repeated time steps (y/n)? [no] 
+
+! In which time step to start processing the trajectory? [1] 
+
+! How many time steps to use (from this position on)? [all] 
+
+! Use every n-th time step from the trajectory? [1] 
+

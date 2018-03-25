@@ -1,0 +1,100 @@
+ DBCSR| Multiplication driver                                               BLAS
+ DBCSR| Multrec recursion limit                                              512
+ DBCSR| Multiplication stack size                                           1000
+ DBCSR| Maximum elements for images                                    UNLIMITED
+ DBCSR| Multiplicative factor virtual images                                   1
+ DBCSR| Randmat seed                                                    12341313
+ DBCSR| Multiplication size stacks                                             3
+ DBCSR| Number of 3D layers                                               SINGLE
+ DBCSR| Use MPI memory allocation                                              T
+ DBCSR| Use RMA algorithm                                                      F
+ DBCSR| Use Communication thread                                               T
+ DBCSR| Communication thread load                                             87
+
+
+  **** **** ******  **  PROGRAM STARTED AT               2018-03-21 04:39:25.747
+ ***** ** ***  *** **   PROGRAM STARTED ON                                ubuntu
+ **    ****   ******    PROGRAM STARTED BY                                  user
+ ***** **    ** ** **   PROGRAM PROCESS ID                                  5539
+  **** **  *******  **  PROGRAM STARTED IN                      /home/user/week5
+
+ CP2K| version string:                                          CP2K version 4.1
+ CP2K| source code revision number:                                    svn:17462
+ CP2K| cp2kflags: libint fftw3 libxc elpa3 parallel mpi3 scalapack              
+ CP2K| is freely available from                            https://www.cp2k.org/
+ CP2K| Program compiled at                          Sat Aug  5 09:59:49 UTC 2017
+ CP2K| Program compiled on                                              lgw01-13
+ CP2K| Program compiled for                                Linux-x86_64-gfortran
+ CP2K| Data directory path                                       /usr/share/cp2k
+ CP2K| Input file name                                                IR-DFTB.in
+
+ GLOBAL| Force Environment number                                              1
+ GLOBAL| Basis set file name                                           BASIS_SET
+ GLOBAL| Potential file name                                           POTENTIAL
+ GLOBAL| MM Potential file name                                     MM_POTENTIAL
+ GLOBAL| Coordinate file name                                          ./mol.xyz
+ GLOBAL| Method name                                                        CP2K
+ GLOBAL| Project name                                                        MET
+ GLOBAL| Preferred FFT library                                             FFTW3
+ GLOBAL| Preferred diagonalization lib.                                       SL
+ GLOBAL| Run type                                                             MD
+ GLOBAL| All-to-all communication in single precision                          F
+ GLOBAL| FFTs using library dependent lengths                                  T
+ GLOBAL| Global print level                                                  LOW
+ GLOBAL| Total number of message passing processes                             1
+ GLOBAL| Number of threads for this process                                    1
+ GLOBAL| This output is from process                                           0
+ GLOBAL| CPU model name :  Intel(R) Xeon(R) CPU           X5690  @ 3.47GHz
+
+ MEMORY| system memory details [Kb]
+ MEMORY|                        rank 0           min           max       average
+ MEMORY| MemTotal             16402728      16402728      16402728      16402728
+ MEMORY| MemFree               4842616       4842616       4842616       4842616
+ MEMORY| Buffers                158836        158836        158836        158836
+ MEMORY| Cached                1600092       1600092       1600092       1600092
+ MEMORY| Slab                   228052        228052        228052        228052
+ MEMORY| SReclaimable           157376        157376        157376        157376
+ MEMORY| MemLikelyFree         6758920       6758920       6758920       6758920
+
+
+ GENERATE|  Preliminary Number of Bonds generated:                             0
+ GENERATE|  Achieved consistency in connectivity generation.
+
+
+              #####   #####        # ######  ####### ####### ######   
+             #     # #     #      #  #     # #          #    #     #  
+             #     # #           #   #     # #          #    #     #  
+             #     #  #####     #    #     # #####      #    ######   
+             #   # #       #   #     #     # #          #    #     #  
+             #    #  #     #  #      #     # #          #    #     #  
+              #### #  #####  #       ######  #          #    ######   
+                                                                      
+                                    Version 0.2                       
+                               J. Hutter and T. Heine                 
+                                                                      
+
+
+ *******************************************************************************
+ *   ___                                                                       *
+ *  /   \                                                                      *
+ * [ABORT]                                                                     *
+ *  \___/    The specified OLD file </usr/share/cp2k/scc/scc_parameter> cannot *
+ *    |     be opened. It does not exist. Data directory path: /usr/share/cp2k *
+ *  O/|                                                                        *
+ * /| |                                                                        *
+ * / \                                                   common/cp_files.F:393 *
+ *******************************************************************************
+
+
+ ===== Routine Calling Stack ===== 
+
+            2 qs_init_subsys
+            1 CP2K
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
