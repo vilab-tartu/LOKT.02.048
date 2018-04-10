@@ -1,0 +1,90 @@
+
+@set RESTART       0
+
+@SET SYSTEM      water
+@SET DATA_PATH   /usr/share/cp2k
+
+&GLOBAL
+  PROJECT       ${SYSTEM}
+  RUN_TYPE      MD 
+  PRINT_LEVEL   LOW
+&END GLOBAL
+
+&FORCE_EVAL
+
+  METHOD Quickstep
+
+  &DFT
+    &POISSON
+      POISSON_SOLVER WAVELET
+      PERIODIC NONE
+    &END POISSON
+
+    &QS
+      METHOD PM6
+      &SE
+        PERIODIC NONE
+      &END SE
+    &END QS
+
+    &SCF
+      SCF_GUESS ATOMIC
+      EPS_SCF 3.0E-7
+      MAX_SCF 2000
+    &END SCF
+
+    &LOCALIZE
+      &PRINT
+        &WANNIER_CENTERS
+          IONS+CENTERS   True
+          FILENAME      =IR-wannier.xyz
+        &END WANNIER_CENTERS
+      &END PRINT
+    &END LOCALIZE
+  &END DFT
+
+  &SUBSYS
+    &CELL
+      A [nm]  3.000 0.000 0.000
+      B [nm]  0.000 3.000 0.000
+      C [nm]  0.000 0.000 3.000
+    &END CELL
+
+    &TOPOLOGY
+      COORD_FILE_FORMAT xyz
+      COORD_FILE_NAME ./mol.xyz
+    &END TOPOLOGY
+  &END SUBSYS
+&END FORCE_EVAL
+
+&MOTION
+ &MD
+! definition of microcanonical ensemble
+   ENSEMBLE NVE
+! The length of an integration step
+   TIMESTEP 0.5
+! The number of MD steps to perform 
+   STEPS  100
+! The temperature in K used to initialize the velocities
+   TEMPERATURE 300
+   &PRINT
+     &ENERGY
+! print energy after each N (=20 here) MD steps.
+        &EACH
+           MD 10
+        &END
+     &END ENERGY
+! Level starting at which this proprety is printed
+     &PROGRAM_RUN_INFO
+        &EACH
+           MD 10
+        &END
+     &END PROGRAM_RUN_INFO
+   &END PRINT
+ &END MD
+&END MOTION
+! external section : specifies an external input file where to take positions
+#&EXT_RESTART
+! name of the restart file to be read
+# RESTART_FILE_NAME PM6-1.restart
+#&END

@@ -1,0 +1,7 @@
+!PBE def2-svp CHELPG
+%loc
+ MaxIter 300
+end
+* xyzfile 0 1 NaCl.xyz
+
+% MaxCore 1000
