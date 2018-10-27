@@ -1,0 +1,31 @@
+#
+# Simulationbox with two electrodes and IL
+#
+
+tolerance 2.0
+filetype pdb
+output packmol.pdb
+seed 1983757
+add_box_sides 
+
+structure Grl.pdb
+  number 1
+  center
+  fixed 17.04 17.2165 2 0. 0. 0.
+end structure
+
+structure Grr.pdb
+  number 1
+  center
+  fixed 17.04 17.2165 68 0. 0. 0.
+end structure
+
+structure BMPyr.pdb 
+  number 204
+  inside box 0.0 0.0 4.5 34.08 34.433 65.5
+end structure
+
+structure DCA.pdb 
+  number 204
+  inside box 0.0 0.0 4.5 34.08 34.433 65.5
+end structure

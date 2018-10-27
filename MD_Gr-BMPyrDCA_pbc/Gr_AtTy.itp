@@ -1,0 +1,16 @@
+[ atomtypes ]
+;   type      mass    charge    ptype     sig         eps
+     Grl      12.01    0.00       A     0.3550      0.29288
+     Grr      12.01    0.00       A     0.3550      0.29288
+     Wl        0.0     0.00       A     0.0000      0.00000
+     Wr        0.0     0.00       A     0.0000      0.00000
+     
+     [ nonbond_params ]
+;                         sigma         epsilon
+;        TARGET   VALUES
+  Wl     Wr       1       0.00000       0.00000
+  Wl     Grl      1       0.00000       0.00000
+  Wr     Grr      1       0.00000       0.00000
+  Grl    Grr      1       0.00000       0.00000
+  Grl    Grl      1       0.00000       0.00000
+  Grr    Grr      1       0.00000       0.00000

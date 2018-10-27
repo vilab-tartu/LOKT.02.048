@@ -1,0 +1,55 @@
+; RUN CONTROL PARAMETERS
+constraints              = all-bonds
+integrator               = md
+dt                       = 0.0005
+nsteps                   = 2000000 ; 100 ps 
+energy_grps              = NC Pyr
+freezegrps               = Grl Grr
+freezedim                = Y Y Y Y Y Y
+
+; OUTPUT CONTROL OPTIONS
+nstcomm                  = 10000
+nstxout                  = 0
+nstvout                  = 0
+nstfout                  = 0
+nstlog                   = 10000
+nstenergy                = 10000
+nstxout-compressed       = 10000
+compressed-x-precision   = 10000
+
+; NEIGHBORSEARCHING PARAMETERS
+cutoff-scheme		     = verlet
+nstlist                  = 40
+ns_type                  = grid  
+pbc                      = xy
+rlist                    = 1.45
+rcoulomb                 = 1.45
+vdw-modifier             = Potential-shift
+rvdw                     = 1.45
+
+; OPTIONS FOR ELECTROSTATICS AND VDW
+coulombtype              = PME
+fourierspacing           = 0.10
+pme_order                = 6
+ewald_rtol               = 1e-05
+ewald_geometry           = 3dc
+table-extension          = 3
+epsilon_r                = 1.6
+
+; WALLS
+nwall                    = 2
+wall-atomtype            = Wr Wl
+wall-type                = 12-6
+wall-ewald-zfac          = 5
+
+; OPTIONS FOR WEAK COUPLING ALGORITHMS
+tcoupl                   = v-rescale
+tc-grps	                 = System
+tau_t                    = 0.5
+ref_t                    = 300
+Pcoupl                   = no
+
+; GENERATE VELOCITIES FOR STARTUP RUN
+gen_vel                  = no
+gen_temp                 = 300
+gen_seed                 = 473529

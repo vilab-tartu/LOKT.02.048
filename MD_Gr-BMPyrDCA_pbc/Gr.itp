@@ -1,0 +1,31 @@
+[ moleculetype ]
+; Name  nrexcl
+  Grl      1
+
+[ atoms ]
+;   nr    type  resnr  residue  atom   Gnr   charge                       mass
+    1     Grl     1    Grl      Grl    1     0                            12.011  
+
+[ moleculetype ]
+; Name  nrexcl
+  Grr      1
+
+[ atoms ]
+;   nr    type  resnr  residue  atom   Gnr   charge                       mass
+    1     Grr     1    Grr      Grr    1     0                            12.011  
+    
+[ moleculetype ]
+; Name  nrexcl
+  Wl      1
+
+[ atoms ]
+;   nr    type  resnr  residue  atom   Gnr   charge                       mass
+    1     Wl      1    Wl       Wl     1     0                            0.0 
+    
+[ moleculetype ]
+; Name  nrexcl
+  Wr       1
+
+[ atoms ]
+;   nr    type  resnr  residue  atom   Gnr   charge                       mass
+    1     Wr      1    Wr       Wr     1     0                            0.0  
