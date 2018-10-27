@@ -1,0 +1,15 @@
+tolerance 2.0
+filetype pdb
+output packmol.pdb
+seed 9305733
+add_box_sides 
+
+structure ./BMPyr.pdb 
+  number 25
+  inside box 0.0 0.0 0.00 21.00 21.00 21.00
+end structure
+
+structure ./DCA.pdb 
+  number 25
+  inside box 0.0 0.0 0.00 21.00 21.00 21.00
+end structure
